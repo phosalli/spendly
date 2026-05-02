@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block head %}
+<style>
+    .legal-header {
+        background: var(--paper-warm);
+        border-bottom: 1px solid var(--border);
+        padding: 4rem 2rem 3rem;
+        text-align: center;
+    }
+
+    .legal-header-inner {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .legal-badge {
+        display: inline-block;
+        background: var(--accent-light);
+        color: var(--accent);
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.35rem 0.85rem;
+        border-radius: 999px;
+        margin-bottom: 1.25rem;
+    }
+
+    .legal-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: var(--ink);
+        margin-bottom: 0.75rem;
+    }
+
+    .legal-meta {
+        font-size: 0.875rem;
+        color: var(--ink-faint);
+    }
+
+    .legal-body {
+        padding: 3rem 2rem 5rem;
+    }
+
+    .legal-body-inner {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .legal-section {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid var(--border-soft);
+    }
+
+    .legal-section:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .legal-section-title {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        color: var(--ink);
+        margin-bottom: 0.875rem;
+    }
+
+    .legal-section p {
+        font-size: 0.95rem;
+        color: var(--ink-muted);
+        line-height: 1.8;
+        margin-bottom: 0.75rem;
+    }
+
+    .legal-section p:last-child {
+        margin-bottom: 0;
+    }
+
+    .legal-section ul {
+        margin: 0.75rem 0 0.75rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .legal-section ul li {
+        font-size: 0.95rem;
+        color: var(--ink-muted);
+        line-height: 1.7;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="legal-header">
+    <div class="legal-header-inner">
+        <div class="legal-badge">Legal</div>
+        <h1 class="legal-title">Terms and Conditions</h1>
+        <p class="legal-meta">Last updated: May 2026</p>
+    </div>
+</div>
+
+<div class="legal-body">
+    <div class="legal-body-inner">
+
+        <div class="legal-section">
+            <h2 class="legal-section-title">1. Acceptance of Terms</h2>
+            <p>By accessing or using Spendly ("the Service"), you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you may not use the Service.</p>
+            <p>These terms apply to all visitors, users, and others who access or use the Service. We reserve the right to update these terms at any time, and your continued use of the Service after any changes constitutes your acceptance of the new terms.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2 class="legal-section-title">2. Use of Service</h2>
+            <p>Spendly is a personal expense tracking tool intended for individual, non-commercial use. By using the Service, you agree to:</p>
+            <ul>
+                <li>Provide accurate and complete information when creating an account</li>
+                <li>Keep your login credentials secure and not share them with others</li>
+                <li>Use the Service only for lawful purposes and in accordance with these terms</li>
+                <li>Not attempt to gain unauthorised access to any part of the Service or its systems</li>
+                <li>Not use the Service to store or transmit any malicious or harmful content</li>
+            </ul>
+            <p>We reserve the right to suspend or terminate access for any user who violates these terms.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2 class="legal-section-title">3. User Data</h2>
+            <p>When you use Spendly, you provide us with financial data such as expense amounts, categories, and dates. This data belongs to you. We do not sell or share your personal financial data with third parties.</p>
+            <p>You are responsible for the accuracy of the data you enter. Spendly stores your data to provide the Service and may use anonymised, aggregated data for product improvement purposes.</p>
+            <p>You may request deletion of your account and all associated data at any time by contacting us. Upon deletion, your data will be permanently removed from our systems within 30 days.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2 class="legal-section-title">4. Limitations of Liability</h2>
+            <p>Spendly is provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. We do not warrant that the Service will be uninterrupted, error-free, or free of harmful components.</p>
+            <p>To the fullest extent permitted by law, Spendly and its operators shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of or inability to use the Service, including but not limited to:</p>
+            <ul>
+                <li>Loss of data or financial information</li>
+                <li>Errors or inaccuracies in expense tracking</li>
+                <li>Any decisions made based on information provided by the Service</li>
+            </ul>
+            <p>Spendly is a personal finance tracking tool and does not provide financial advice. Always consult a qualified financial professional for advice specific to your situation.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2 class="legal-section-title">5. Changes to Terms</h2>
+            <p>We may revise these Terms and Conditions from time to time. When we make material changes, we will update the "Last updated" date at the top of this page and, where appropriate, notify registered users by email.</p>
+            <p>Your continued use of the Service after any changes take effect constitutes your agreement to the revised terms. If you do not agree to the updated terms, you should stop using the Service.</p>
+            <p>If you have any questions about these terms, please reach out to us through the app.</p>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
